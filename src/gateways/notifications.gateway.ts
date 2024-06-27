@@ -12,7 +12,7 @@ import { EVENTS } from './events';
 
 @WebSocketGateway(3001, {
   cors: {
-    origin: '*',
+    origin: true,
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
     preflightContinue: true,
     credentials: true,
