@@ -19,6 +19,7 @@ import { EVENTS } from './events';
       'http://localhost:3001',
     ],
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    preflightContinue: true,
     credentials: true,
   },
   transports: ['websocket'],
