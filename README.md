@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="" target="blank"><img src="https://media-cdn.pickfu.com/image/upload/v1/web-static/assets/logos/pickfu-logo-svg.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
 [Deployed here](http://100.29.178.172:3000/)
