@@ -10,7 +10,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { EVENTS } from './events';
 
-@WebSocketGateway(3001, { cors: '*', path: '/socket.io' })
+@WebSocketGateway(3001, { cors: '*' })
 export class NotificationsGateway
   implements OnGatewayConnection, OnGatewayDisconnect
 {
