@@ -10,7 +10,19 @@ import {
 import { Server, Socket } from 'socket.io';
 import { EVENTS } from './events';
 
-@WebSocketGateway(3001, { cors: true, transports: ['websocket'] })
+@WebSocketGateway(3001, {
+  cors: {
+    origin: [
+      'http://100.29.178.172:3000',
+      'http://100.29.178.172:3001',
+      'http://localhost:3000',
+      'http://localhost:3001',
+    ],
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    credentials: true,
+  },
+  transports: ['websocket'],
+})
 export class NotificationsGateway
   implements OnGatewayConnection, OnGatewayDisconnect
 {
