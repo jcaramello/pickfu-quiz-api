@@ -12,13 +12,7 @@ import { EVENTS } from './events';
 
 @WebSocketGateway(3001, {
   cors: {
-    origin: [
-      'http://100.29.178.172',
-      'http://100.29.178.172:3000',
-      'http://100.29.178.172:3001',
-      'http://localhost:3000',
-      'http://localhost:3001',
-    ],
+    origin: '*',
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
     preflightContinue: true,
     credentials: true,
